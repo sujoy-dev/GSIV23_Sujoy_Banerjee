@@ -1,13 +1,100 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+/* Home icon */
+.home-button {
+  margin-left: auto;
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+  margin-right: 8px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* MovieList CSS */
+.search-bar {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1); 
+  padding: 8px;
+  background-color: #fff;
 }
+
+.search-bar input[type="text"] {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 8px;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.movie-card {  
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  width: 300px;  
+}
+
+.movie-card img {
+  width: 100%;
+  object-fit:cover ;
+}
+
+.movie-card h2 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.rating {
+  display: flex;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.description {
+  font-size: 14px;
+  margin-top: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* MovieList CSS End */
+
+/* MovieDetails CSS */
+.movieDetails-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #fff;  
+  border-radius: 5px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  height: 50px;
+}
+
+.movieDetails {
+  display: flex;
+}
+
+.movieDetails_desc {
+  padding: 0 20px 0 20px;
+}
+
+.movieDetails_poster img {
+  width: 300px;
+  height: 400px;
+  object-fit: fill;
+  border-radius: 5px;
+}
+/* MovieDetails CSS End*/
