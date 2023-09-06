@@ -5,7 +5,8 @@ export const SEARCH_MOVIES_SUCCESS = "SEARCH_MOVIES_SUCCESS";
 export const FETCH_MOVIE_DETAILS_SUCCESS = "FETCH_MOVIE_DETAILS_SUCCESS";
 export const APPEND_UPCOMING_MOVIES = "APPEND_UPCOMING_MOVIES";
 
-const API_KEY = "78f48c3bac7561579d4a41d4664ad607";
+const API_KEY = process.env.REACT_APP_TMDB_API_KEY;
+console.log(API_KEY);
 const BASE_URL = "https://api.themoviedb.org/3";
 
 export const fetchUpcomingMoviesSuccess = (movies) => ({
